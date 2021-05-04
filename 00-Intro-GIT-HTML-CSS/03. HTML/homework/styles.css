@@ -14,7 +14,8 @@ h1{
             width: 500px;
            background-color: goldenrod;
            padding: 50px;
-           border:2px solid:crimson;
+           border:2px;
+           
         }
         #spanId{
 
