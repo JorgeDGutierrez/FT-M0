@@ -36,8 +36,9 @@ function suma(x, y) {
     // "x" e "y" son números
     // Suma "x" e "y" juntos y devuelve el valor
     // Tu código:
+    var suma = x + y;
 
-    return x + y;
+    return suma;
 
 }
 
@@ -127,6 +128,7 @@ function esImpar(num) {
     // Devuelve "true" si "num" es impar
     // De lo contrario, devuelve "false"
     // Tu código:
+    //num % 2 !== 0 otra solucion
     if (num % 2 === 1) {
         return true;
     } else {
@@ -226,7 +228,7 @@ function retornarPerimetro(lado) {
 function areaDelTriangulo(base, altura) {
     //Desarrolle una función que calcule el área de un triángulo.
     //Escribe tu código aquí
-    return base * altura / 2;
+    return (base * altura) / 2;
 
 }
 
