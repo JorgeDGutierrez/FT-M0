@@ -12,10 +12,8 @@ function devolverPrimerElemento(array) {
 function devolverUltimoElemento(array) {
     // Devuelve el último elemento de un array
     // Tu código:
-
-
-    return array[array.length - 1];
-
+    // return array[array.length - 1];
+    return array.pop();
 }
 
 
@@ -44,7 +42,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
     // Añade el "elemento" al final del array
     // y devuelve el array
     // Tu código:
-    array[array.length] = elemento;
+    array.push(elemento);
+    //array[array.length] = elemento;
     return array;
 }
 
@@ -67,7 +66,20 @@ function dePalabrasAFrase(palabras) {
     // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
     // Tu código:
     return palabras.join(' ');
+    /*
+        var frase = "";
+        for (let i = 0; i < array.length; i++) {
+            if (i === palabras.length - 1) {
+                frase = frase + palabras[i]
+            } else frase = frase + palabras[i] + " "
+
+            return frase;
+
+
+        }
+        */
 }
+
 
 
 function arrayContiene(array, elemento) {
@@ -90,8 +102,11 @@ function agregarNumeros(numeros) {
     // Tu código:
     var suma = 0;
     for (var i = 0; i < numeros.length; i++) {
-        suma = suma + numeros[i];
+        // suma = suma + numeros[i];
+        suma += numeros[i];
+
     }
+    console.log(suma);
     return suma;
 
 }
@@ -122,7 +137,7 @@ function numeroMasGrande(numeros) {
 
 function multiplicarArgumentos() {
     // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
-       // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
+    // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
     // Escribe tu código aquí:
     if (arguments.length < 1) return 0;
     var resultado = 1;
