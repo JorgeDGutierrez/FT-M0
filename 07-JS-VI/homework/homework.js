@@ -41,14 +41,12 @@ function forEach(array, cb) {
          cb(array[i]);
 
      } */
-    array.forEach(function(elemento, indice) {
+    /*  array.forEach(function(elemento, indice) {
+         console.log("pos=", indice, "valor=", elemento);
+         cb(array[indice])
 
-
-
-        console.log("pos=", indice, "valor=", elemento);
-        cb(array[indice])
-
-    })
+     }) */
+    array.forEach(element => cb(element));
 
 }
 
@@ -73,13 +71,16 @@ function filter(array) {
     //Filtrar todos los elementos del array que comiencen con la letra "a".
     //Devolver un nuevo array con los elementos que cumplen la condición
     //Tu código:
-    var nuevoArray = [];
-    for (let i = 0; i < array.length; i++) {
+    var arrayNuevo = [];
+    /* for (let i = 0; i < array.length; i++) {
         if (array[i][0] === "a") {
             nuevoArray.push(array[i])
         }
     }
-    return nuevoArray;
+    return nuevoArray; */
+    array.filter((elemento) => elemento[0] === 'a' ? arrayNuevo.push(elemento) : null);
+
+    return arrayNuevo;
 }
 
 // No modificar nada debajo de esta línea
